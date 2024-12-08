@@ -3,14 +3,14 @@ pipeline {
     
     tools {
         //To specify the maven to use
-        maven "mvn3.9.8"
+        maven "mvn-3.9.8"
     }
     
     stages {
         stage('Checkout'){
             steps{
                 //Checkout the source repo from scm
-                git 'https://github.com/abhijithvg/simple-java-maven-app.git'
+                git 'https://github.com/vanand46/simple-java-maven-app.git'
             }
         }
         stage('Build'){
